@@ -21,5 +21,21 @@
                 <Button Name="AboutButton" Foreground="#2c4cf1" FontSize="15" Background="Transparent" Tag="https://github.com/cabiste69/Guides/tree/main/Coding/Avalonia%20UI%20for%20beginners"> About</Button>
             </StackPanel>
         </Panel>
+
+        <!-- side bar -->
+        <Panel Grid.Column="0" Grid.Row="1">
+            <Panel.Background>
+                <LinearGradientBrush StartPoint="0%,0%" EndPoint="0%,100%">
+                    <GradientStop Offset="0" Color="#0d194c" />
+                    <GradientStop Offset="1" Color="#2e0539" />
+                </LinearGradientBrush>
+            </Panel.Background>
+
+            <StackPanel Name="SideBar" Spacing="10" Margin="20, 20">
+                <Button Foreground="white" Background="Transparent" Width="200" FontSize="16" Padding="30, 7" Tag="Home" >Home</Button>
+                <Button Foreground="white" Background="Transparent" Width="200" FontSize="16" Padding="30, 7" Tag="Counter" >Counter</Button>
+                <Button Foreground="white" Background="Transparent" Width="200" FontSize="16" Padding="30, 7" Tag="FetchData" >Fetch data</Button>
+            </StackPanel>
+        </Panel>
     </Grid>
 </Window>
