@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
+using CatApp.Views.Counter;
 using CatApp.Views.Home;
 using CatApp.Views.Main;
 
@@ -60,7 +61,7 @@ class MainController
                 break;
 
             case "Counter":
-                Console.WriteLine("Clicked on the 'counter' button.");
+                _view.MainContentArea.Content = new CounterView();
                 break;
 
             case "FetchData":

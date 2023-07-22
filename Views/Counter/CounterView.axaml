@@ -1,0 +1,13 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="CatApp.Views.Counter.CounterView">
+
+    <StackPanel Margin="30,22" Spacing="15">
+        <TextBlock FontSize="40">Cat Counter</TextBlock>
+        <TextBlock Name="CountMessage" FontSize="16">Current cats count: 0</TextBlock>
+        <Button Background="#16589b" Padding="10" Click="IncrementCount">Add a cat</Button>
+    </StackPanel>
+</UserControl>
