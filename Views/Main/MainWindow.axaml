@@ -8,15 +8,17 @@
         Title="CatApp">
 
     <Grid RowDefinitions="70, *" ColumnDefinitions="250, *" ShowGridLines="true">
+
+        <!-- App header -->
         <Panel Background="#051130" Grid.Row="0" Grid.Column="0">
             <TextBlock Foreground="white" TextAlignment="Center" FontSize="18" FontWeight="Bold" Padding="0, 20"> Cat App </TextBlock>
         </Panel>
 
+        <!-- Main content's header -->
         <Panel Background="#222" Grid.Column="1" Grid.Row="0">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Spacing="10" Margin="25, 20">
-            <Button Name="GithubButton" Foreground="#2c4cf1" FontSize="15" Background="Transparent" Tag="https://github.com/cabiste69/CatAppTuto"> Github</Button>
-
-            <Button Name="AboutButton" Foreground="#2c4cf1" FontSize="15" Background="Transparent" Tag="https://github.com/cabiste69/Guides/tree/main/Coding/Avalonia%20UI%20for%20beginners"> About</Button>
+                <Button Name="GithubButton" Foreground="#2c4cf1" FontSize="15" Background="Transparent" Tag="https://github.com/cabiste69/CatAppTuto"> Github</Button>
+                <Button Name="AboutButton" Foreground="#2c4cf1" FontSize="15" Background="Transparent" Tag="https://github.com/cabiste69/Guides/tree/main/Coding/Avalonia%20UI%20for%20beginners"> About</Button>
             </StackPanel>
         </Panel>
     </Grid>
