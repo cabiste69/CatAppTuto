@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
+using CatApp.Views.Home;
 using CatApp.Views.Main;
 
 namespace CatApp.Controllers;
@@ -16,6 +17,7 @@ class MainController
         _view = view;
         ConfigureMainHeader();
         ConfigureSideBar();
+        InitializeMainContent();
     }
 
     /// <summary>
@@ -54,7 +56,7 @@ class MainController
         switch (ViewName)
         {
             case "Home":
-                Console.WriteLine("Clicked on the 'home' button.");
+                _view.MainContentArea.Content = new HomeView();
                 break;
 
             case "Counter":
@@ -88,5 +90,10 @@ class MainController
 
         // start a process with the defined info
         Process.Start(startInfo);
+    }
+
+    private void InitializeMainContent()
+    {
+        _view.MainContentArea.Content = new HomeView();
     }
 }
