@@ -8,6 +8,8 @@
         Title="CatApp">
 
     <Grid RowDefinitions="70, *" ColumnDefinitions="250, *" ShowGridLines="true">
-
+        <Panel Background="#051130" Grid.Row="0" Grid.Column="0">
+            <TextBlock Foreground="white" TextAlignment="Center" FontSize="18" FontWeight="Bold" Padding="0, 20"> Cat App </TextBlock>
+        </Panel>
     </Grid>
 </Window>
