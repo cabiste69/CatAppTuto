@@ -3,6 +3,7 @@ using System.Diagnostics;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using CatApp.Views.Counter;
+using CatApp.Views.FetchData;
 using CatApp.Views.Home;
 using CatApp.Views.Main;
 
@@ -65,7 +66,7 @@ class MainController
                 break;
 
             case "FetchData":
-                Console.WriteLine("Clicked on the 'fetch data' button.");
+                _view.MainContentArea.Content = new FetchDataView();
                 break;
 
             default:
