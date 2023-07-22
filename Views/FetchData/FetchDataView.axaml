@@ -2,7 +2,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mdl="using:CatApp.Models"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="CatApp.Views.FetchData.FetchDataView">
-  Welcome to Avalonia!
+
+    <ScrollViewer>
+        <StackPanel Spacing="15" Margin="30, 22">
+            <TextBlock FontSize="40">Cat list</TextBlock>
+            <TextBlock FontSize="16">these cats are still waiting to be adopted</TextBlock>
+            <DataGrid Name="CatsGrid" ColumnWidth="150" Width="600" HorizontalAlignment="Left" GridLinesVisibility="Horizontal" x:DataType="mdl:CatModel" VerticalScrollBarVisibility="Disabled" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Age (years)" Binding="{Binding Age}"/>
+                    <DataGridTextColumn Header="Weight (Kg)" Binding="{Binding Weight}"/>
+                    <DataGridTextColumn Header="Birth date" Binding="{Binding BirthDate}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </ScrollViewer>
 </UserControl>
