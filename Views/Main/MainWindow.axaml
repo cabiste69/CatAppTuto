@@ -22,7 +22,7 @@
             </StackPanel>
         </Panel>
 
-        <!-- side bar -->
+        <!-- Side bar -->
         <Panel Grid.Column="0" Grid.Row="1">
             <Panel.Background>
                 <LinearGradientBrush StartPoint="0%,0%" EndPoint="0%,100%">
@@ -37,5 +37,9 @@
                 <Button Foreground="white" Background="Transparent" Width="200" FontSize="16" Padding="30, 7" Tag="FetchData" >Fetch data</Button>
             </StackPanel>
         </Panel>
+
+        <!-- Main content -->
+        <UserControl Name="MainContentArea" Background="#181a1b" Grid.Column="1" Grid.Row="1">
+        </UserControl>
     </Grid>
 </Window>
